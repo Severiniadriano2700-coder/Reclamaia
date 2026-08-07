@@ -9,9 +9,9 @@ import {
 
 const faqs = [
   {
-    question: "¿ReclamaAI sustituye a un abogado?",
+    question: "¿Litiga IA sustituye a un abogado?",
     answer:
-      "No. ReclamaAI genera una reclamación extrajudicial profesional para el primer contacto formal con la empresa. Para litigios complejos o procedimientos judiciales, recomendamos asesoramiento legal especializado.",
+      "No. Litiga IA genera una reclamación extrajudicial profesional para el primer contacto formal con la empresa. Para litigios complejos o procedimientos judiciales, recomendamos asesoramiento legal especializado.",
   },
   {
     question: "¿Es legalmente válido el documento generado?",
@@ -34,7 +34,7 @@ const faqs = [
       "Sí, no hay permanencia. Puedes cancelar tu plan en cualquier momento desde el panel de facturación y seguirás teniendo acceso hasta el final del periodo pagado.",
   },
   {
-    question: "¿Qué modelos de IA utiliza ReclamaAI?",
+    question: "¿Qué modelos de IA utiliza Litiga IA?",
     answer:
       "Utilizamos modelos de lenguaje de última generación optimizados para redacción jurídica en español, con revisión continua de la calidad de los documentos generados.",
   },

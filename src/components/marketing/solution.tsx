@@ -30,7 +30,7 @@ export function Solution() {
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading
           eyebrow="La solución"
-          title="ReclamaAI hace el trabajo de un asesor legal en el tiempo de un café"
+          title="Litiga IA hace el trabajo de un asesor legal en el tiempo de un café"
           description="No sustituimos a un abogado en litigios complejos. Resolvemos el 90% de los casos: la reclamación inicial, bien hecha."
         />
 

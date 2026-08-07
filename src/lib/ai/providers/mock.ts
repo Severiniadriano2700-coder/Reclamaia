@@ -49,7 +49,7 @@ function buildChatReply(input: ChatCompletionInput): string {
   const lower = lastMessage.toLowerCase()
 
   if (/^(hola|buenas|hey|hi)\b/.test(lower.trim())) {
-    return "¡Hola! Soy el asistente de ReclamaAI. Puedo ayudarte con dudas sobre tus reclamaciones guardadas o sobre tus derechos como consumidor frente a aerolíneas, bancos, seguros y otros sectores. ¿En qué te ayudo?"
+    return "¡Hola! Soy el asistente de Litiga IA. Puedo ayudarte con dudas sobre tus reclamaciones guardadas o sobre tus derechos como consumidor frente a aerolíneas, bancos, seguros y otros sectores. ¿En qué te ayudo?"
   }
 
   const matchedClaim = findMatchingClaim(lastMessage, input.claims)
@@ -165,7 +165,7 @@ ${
     : ""
 }
 ---
-*Este documento ha sido generado como plantilla de ayuda por ReclamaAI y no constituye asesoramiento legal vinculante. Se recomienda revisión antes de su envío.*`
+*Este documento ha sido generado como plantilla de ayuda por Litiga IA y no constituye asesoramiento legal vinculante. Se recomienda revisión antes de su envío.*`
 }
 
 const ATTACHMENT_PATTERN = /\b(adjunto|correo|email|captura|factura|justificante|documento adjunto)\b/i
@@ -198,7 +198,7 @@ function heuristicAnalysis(input: ClaimAnalysisInput): ClaimAnalysis {
 
 export class MockProvider implements AiGenerationProvider {
   readonly id = "mock" as const
-  readonly model = "reclamaai-demo-v1"
+  readonly model = "litigaia-demo-v1"
 
   async *generate(input: ClaimGenerationInput) {
     const document = buildDocument(input)

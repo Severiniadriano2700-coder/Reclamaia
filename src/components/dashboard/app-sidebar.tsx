@@ -65,7 +65,7 @@ export function AppSidebar({
             <Scale className="size-4" />
           </span>
           <span className="font-heading text-sm font-semibold tracking-tight group-data-[collapsible=icon]:hidden">
-            ReclamaAI
+            Litiga IA
           </span>
         </Link>
       </SidebarHeader>

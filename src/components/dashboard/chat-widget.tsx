@@ -73,7 +73,7 @@ export function ChatWidget() {
                   <Sparkles className="size-3.5" />
                 </span>
                 <div>
-                  <p className="text-sm font-medium leading-tight">Asistente ReclamaAI</p>
+                  <p className="text-sm font-medium leading-tight">Asistente Litiga IA</p>
                   {usage && (
                     <p className="text-[11px] leading-tight text-muted-foreground">
                       {usage.remaining === "unlimited"

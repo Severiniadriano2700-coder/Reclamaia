@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils"
 
 type Cell = "yes" | "no" | "partial" | string
 
-const rows: { label: string; manual: Cell; lawyer: Cell; reclamaai: Cell }[] = [
-  { label: "Tiempo necesario", manual: "2-4 horas", lawyer: "1-2 semanas", reclamaai: "2 minutos" },
-  { label: "Coste", manual: "Gratis (tu tiempo)", lawyer: "80€ - 300€", reclamaai: "Desde 0€" },
-  { label: "Estructura legal formal", manual: "no", lawyer: "yes", reclamaai: "yes" },
-  { label: "Normativa aplicable citada", manual: "partial", lawyer: "yes", reclamaai: "yes" },
-  { label: "Editable al instante", manual: "yes", lawyer: "no", reclamaai: "yes" },
-  { label: "Disponible 24/7", manual: "yes", lawyer: "no", reclamaai: "yes" },
+const rows: { label: string; manual: Cell; lawyer: Cell; litigaia: Cell }[] = [
+  { label: "Tiempo necesario", manual: "2-4 horas", lawyer: "1-2 semanas", litigaia: "2 minutos" },
+  { label: "Coste", manual: "Gratis (tu tiempo)", lawyer: "80€ - 300€", litigaia: "Desde 0€" },
+  { label: "Estructura legal formal", manual: "no", lawyer: "yes", litigaia: "yes" },
+  { label: "Normativa aplicable citada", manual: "partial", lawyer: "yes", litigaia: "yes" },
+  { label: "Editable al instante", manual: "yes", lawyer: "no", litigaia: "yes" },
+  { label: "Disponible 24/7", manual: "yes", lawyer: "no", litigaia: "yes" },
 ]
 
 function CellValue({ value }: { value: Cell }) {
@@ -38,7 +38,7 @@ export function Comparison() {
                 <th className="p-4 text-left font-medium text-muted-foreground">Criterio</th>
                 <th className="p-4 text-center font-medium text-muted-foreground">Manual</th>
                 <th className="p-4 text-center font-medium text-muted-foreground">Abogado</th>
-                <th className={cn("p-4 text-center font-heading font-semibold text-gold")}>ReclamaAI</th>
+                <th className={cn("p-4 text-center font-heading font-semibold text-gold")}>Litiga IA</th>
               </tr>
             </thead>
             <tbody>
@@ -52,7 +52,7 @@ export function Comparison() {
                     <CellValue value={row.lawyer} />
                   </td>
                   <td className="bg-gold-muted/40 p-4 text-center font-medium">
-                    <CellValue value={row.reclamaai} />
+                    <CellValue value={row.litigaia} />
                   </td>
                 </tr>
               ))}

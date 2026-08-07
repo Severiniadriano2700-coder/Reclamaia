@@ -30,7 +30,7 @@ export default async function DashboardPage() {
             Hola, {session!.user.name?.split(" ")[0] ?? "de nuevo"}
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
-            Aquí tienes un resumen de tu actividad en ReclamaAI.
+            Aquí tienes un resumen de tu actividad en Litiga IA.
           </p>
         </div>
         <Button className="gap-2 glow-gold" nativeButton={false} render={<Link href="/dashboard/nueva" />}>

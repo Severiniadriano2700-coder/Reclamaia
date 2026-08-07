@@ -1,4 +1,4 @@
-# ReclamaAI
+# Litiga IA
 
 Genera reclamaciones legales profesionales en menos de dos minutos. El usuario describe su caso en lenguaje natural, la IA redacta un documento formal con estructura jurídica, y el usuario puede editarlo, descargarlo en PDF, copiarlo o enviarlo por email.
 

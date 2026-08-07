@@ -14,7 +14,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
           <span className="flex size-9 items-center justify-center rounded-lg bg-gold text-gold-foreground">
             <Scale className="size-5" />
           </span>
-          <span className="font-heading text-lg font-semibold tracking-tight">ReclamaAI</span>
+          <span className="font-heading text-lg font-semibold tracking-tight">Litiga IA</span>
         </Link>
 
         <div className="relative z-10 max-w-md">
@@ -33,7 +33,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
             <span className="flex size-8 items-center justify-center rounded-lg bg-gold text-gold-foreground">
               <Scale className="size-4" />
             </span>
-            <span className="font-heading text-base font-semibold tracking-tight">ReclamaAI</span>
+            <span className="font-heading text-base font-semibold tracking-tight">Litiga IA</span>
           </Link>
           {children}
         </div>

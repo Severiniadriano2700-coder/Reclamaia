@@ -16,7 +16,7 @@ const testimonials = [
     name: "Javier R.",
     role: "Reclamación bancaria",
     quote:
-      "Llevaba meses peleando por una comisión indebida. El documento que generó ReclamaAI sonaba más serio que mi propio email de reclamación.",
+      "Llevaba meses peleando por una comisión indebida. El documento que generó Litiga IA sonaba más serio que mi propio email de reclamación.",
   },
   {
     initials: "CS",

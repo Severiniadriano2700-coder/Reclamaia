@@ -6,4 +6,4 @@ export const resend = new Resend(apiKey ?? "re_placeholder")
 
 export const isResendConfigured = Boolean(apiKey)
 
-export const EMAIL_FROM = process.env.EMAIL_FROM ?? "ReclamaAI <no-reply@reclama-ai.com>"
+export const EMAIL_FROM = process.env.EMAIL_FROM ?? "Litiga IA <no-reply@litiga-ia.com>"

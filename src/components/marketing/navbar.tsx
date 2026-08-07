@@ -45,7 +45,7 @@ export function Navbar() {
           <span className="flex size-8 items-center justify-center rounded-lg bg-gold text-gold-foreground">
             <Scale className="size-4" />
           </span>
-          <span className="font-heading text-base font-semibold tracking-tight">ReclamaAI</span>
+          <span className="font-heading text-base font-semibold tracking-tight">Litiga IA</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

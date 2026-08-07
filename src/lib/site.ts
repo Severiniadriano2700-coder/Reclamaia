@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "ReclamaAI",
+  name: "Litiga IA",
   tagline: "Reclamaciones legales profesionales en menos de dos minutos",
   description:
-    "ReclamaAI usa inteligencia artificial para redactar reclamaciones legales profesionales frente a aerolíneas, bancos, seguros, hoteles y grandes plataformas. Explica tu caso, la IA genera el documento, tú lo envías.",
-  url: process.env.NEXT_PUBLIC_APP_URL ?? "https://reclama-ai.com",
+    "Litiga IA usa inteligencia artificial para redactar reclamaciones legales profesionales frente a aerolíneas, bancos, seguros, hoteles y grandes plataformas. Explica tu caso, la IA genera el documento, tú lo envías.",
+  url: process.env.NEXT_PUBLIC_APP_URL ?? "https://litiga-ia.com",
   ogImage: "/og-image.png",
   keywords: [
     "reclamación legal IA",
@@ -16,10 +16,10 @@ export const siteConfig = {
     "IA legal",
   ],
   links: {
-    twitter: "https://twitter.com/reclamaai",
-    linkedin: "https://linkedin.com/company/reclamaai",
+    twitter: "https://twitter.com/litigaia",
+    linkedin: "https://linkedin.com/company/litigaia",
   },
-  supportEmail: "soporte@reclama-ai.com",
+  supportEmail: "soporte@litiga-ia.com",
 } as const
 
 export type SiteConfig = typeof siteConfig

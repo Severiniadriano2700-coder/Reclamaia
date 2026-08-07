@@ -54,7 +54,7 @@ export function UseCases() {
       <SectionHeading
         eyebrow="Casos de uso"
         title="Reclama frente a quien haga falta"
-        description="ReclamaAI conoce los sectores donde más reclamaciones se pierden por falta de tiempo o conocimiento legal. Pulsa en cada uno para ver las dudas más habituales."
+        description="Litiga IA conoce los sectores donde más reclamaciones se pierden por falta de tiempo o conocimiento legal. Pulsa en cada uno para ver las dudas más habituales."
       />
 
       <RevealGroup className="mt-14 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">

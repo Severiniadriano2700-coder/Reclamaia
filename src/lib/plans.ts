@@ -24,7 +24,7 @@ export const plans: PlanDefinition[] = [
   {
     id: "FREE",
     name: "Gratis",
-    description: "Prueba ReclamaAI sin compromiso.",
+    description: "Prueba Litiga IA sin compromiso.",
     price: 0,
     interval: "mes",
     claimsPerMonth: FREE_LIFETIME_CLAIMS,
