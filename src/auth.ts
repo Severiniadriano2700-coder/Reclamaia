@@ -10,15 +10,12 @@ import { db } from "@/lib/db"
 import { loginSchema } from "@/lib/validations/auth"
 import { resend, EMAIL_FROM } from "@/lib/resend"
 import { magicLinkEmail } from "@/lib/email-templates"
+import { authConfig } from "@/auth.config"
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
+  ...authConfig,
   adapter: PrismaAdapter(db),
   session: { strategy: "jwt" },
-  pages: {
-    signIn: "/login",
-    verifyRequest: "/verify-request",
-    error: "/login",
-  },
   providers: [
     Google({
       clientId: process.env.GOOGLE_CLIENT_ID,
@@ -64,20 +61,4 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       },
     }),
   ],
-  callbacks: {
-    async jwt({ token, user }) {
-      if (user) {
-        token.id = user.id
-        token.role = (user as { role?: string }).role ?? "USER"
-      }
-      return token
-    },
-    async session({ session, token }) {
-      if (session.user) {
-        session.user.id = token.id as string
-        session.user.role = (token.role as "USER" | "ADMIN") ?? "USER"
-      }
-      return session
-    },
-  },
 })

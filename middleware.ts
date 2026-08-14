@@ -1,5 +1,11 @@
+import NextAuth from "next-auth"
 import { NextResponse } from "next/server"
-import { auth } from "@/auth"
+import { authConfig } from "@/auth.config"
+
+// Built from the Edge-compatible config only — importing the full `auth`
+// from `@/auth` here would pull Prisma/bcrypt/Resend into the middleware
+// bundle and blow past Vercel's 1MB Edge Function size limit.
+const { auth } = NextAuth(authConfig)
 
 const MUTATING_METHODS = new Set(["POST", "PUT", "PATCH", "DELETE"])
 
