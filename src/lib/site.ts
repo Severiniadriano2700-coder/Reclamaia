@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Reclamaciones legales profesionales en menos de dos minutos",
   description:
     "Litiga IA usa inteligencia artificial para redactar reclamaciones legales profesionales frente a aerolíneas, bancos, seguros, hoteles y grandes plataformas. Explica tu caso, la IA genera el documento, tú lo envías.",
-  url: process.env.NEXT_PUBLIC_APP_URL ?? "https://litiga-ia.com",
+  url: process.env.NEXT_PUBLIC_APP_URL || "https://litiga-ia.com",
   ogImage: "/og-image.png",
   keywords: [
     "reclamación legal IA",
